@@ -1,0 +1,56 @@
+<div class="shop-layout">
+  <!-- 廣告區 -->
+  <div class="ad-panel">
+    <img [src]="ad.imageUrl" alt="廣告" />
+    <p>{{ ad.title }}</p>
+  </div>
+
+  <div class="main-panel">
+    <!-- 分類選單 -->
+    <div class="category-menu">
+      <button class="active">{{ categoryMenu[0] }}</button>
+      <button class="active">{{ categoryMenu[1] }}</button>
+      <button class="active">{{ categoryMenu[2] }}</button>
+      <button class="active">{{ categoryMenu[3] }}</button>
+      <button class="active">{{ categoryMenu[4] }}</button>
+    </div>
+
+    <!-- 商品列表見下一頁 -->
+    <div class="product-grid">...</div>
+  </div>
+</div>
+
+<!-- product-grid 內部 -->
+<div class="product-grid">
+  <div class="product-card">
+    <img [src]="products[0].imageUrl" alt="{{ products[0].name }}" />
+    <p>{{ products[0].name }}</p>
+    <p class="price">${{ products[0].price }}</p>
+  </div>
+
+  <div class="product-card">
+    <img [src]="products[1].imageUrl" alt="{{ products[1].name }}" />
+    <p>{{ products[1].name }}</p>
+    <p class="price">${{ products[1].price }}</p>
+  </div>
+
+  <div class="product-card">
+    <img [src]="products[2].imageUrl" alt="{{ products[2].name }}" />
+    <p>{{ products[2].name }}</p>
+    <p class="price">${{ products[2].price }}</p>
+  </div>
+
+  <div class="product-card">
+    <img [src]="products[3].imageUrl" alt="{{ products[3].name }}" />
+    <p>{{ products[3].name }}</p>
+    <p class="price">${{ products[3].price }}</p>
+  </div>
+
+  <div class="product-card">
+    <img [src]="products[4].imageUrl" alt="{{ products[4].name }}" />
+    <p>{{ products[4].name }}</p>
+    <p class="price">${{ products[4].price }}</p>
+  </div>
+
+  <!-- products[2] ~ products[4] 結構相同，以此類推 -->
+</div>

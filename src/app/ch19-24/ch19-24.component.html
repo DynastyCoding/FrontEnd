@@ -1,0 +1,49 @@
+<input [placeholder]="inputHint" />
+<p [class.highlight]="isVip">VIP會員</p>
+<button [disabled]="!isVip">專屬優惠</button>
+<button (click)="change()" style="margin-left: 5rem">切換</button>
+<br />
+<hr />
+<br />
+
+<p>點擊次數:{{ count }}</p>
+<button (click)="addCount()">點擊+1</button>
+<button (click)="reset()">重置</button>
+<br />
+<hr />
+<br />
+
+<input [(ngModel)]="nickname" placeholder="請輸入暱稱" />
+<p>妳好，{{ nickname || "陌生人" }}</p>
+<br />
+<hr />
+<br />
+
+<div
+  class="d-flex justify-content-center align-items-center min-vh-100 bg-light"
+>
+  <div class="rounded-4 p-4 shadow" style="width: 480px">
+    <div class="border border-2 border-dark rounded p-4 position-relative">
+      <div>
+        <button
+          class="btn btn-outline-secondary btn-sm position-absolute top-0 end-0 m-2"
+          (click)="reset2()"
+        >
+          重置
+        </button>
+      </div>
+      <h3 class="text-center text-danger mb-3">角色等級計算機</h3>
+      <p class="fw-bold fs-5">等級: level {{ level }}</p>
+      <div>
+        <button class="btn btn-success" (click)="levelup()">升級</button>
+        <button class="btn btn-danger" (click)="levelDown()">降級</button>
+      </div>
+      <p class="fw-bold fs-5">攻擊力: {{ atk }}</p>
+      <p class="fw-bold fs-5">防禦力: {{ def }}</p>
+      <input [(ngModel)]="inputLevel" placeholder="輸入等級調整" />
+      <br />
+      <button (click)="changeLevel()">調整等級</button>
+      <br />
+    </div>
+  </div>
+</div>

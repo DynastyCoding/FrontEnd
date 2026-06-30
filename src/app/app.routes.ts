@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { Routes } from '@angular/router';
-import {Ch18Component} from './ch18/ch18.component';
+import {AppComponent} from './app.component';
+import { Ch1924Component } from './ch19-24/ch19-24.component';
 
 export const routes: Routes = [
-  {path:'',component:Ch18Component}
+  {path:'',component:Ch1924Component}
 ];
