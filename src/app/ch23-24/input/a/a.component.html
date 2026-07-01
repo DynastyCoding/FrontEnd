@@ -1,0 +1,19 @@
+<h2>頁面A</h2>
+
+<div>
+  <label>使用者名稱： </label>
+  <input [(ngModel)]="name" placeholder="請輸入名稱" />
+</div>
+
+<div>
+  <label>使用者Email： </label>
+  <input [(ngModel)]="email" placeholder="請輸入email" />
+</div>
+
+<div>
+  <label>使用者地址： </label>
+  <input [(ngModel)]="address" placeholder="請輸入地址" />
+</div>
+
+<hr />
+<app-b [userName]="name" [userEmail]="email" [userAddress]="address"> </app-b>

@@ -1,0 +1,11 @@
+<h2>頁面A</h2>
+
+<div>使用者名稱：{{ receivedData.name }}</div>
+<br />
+<div>使用者信箱：{{ receivedData.email }}</div>
+<br />
+<div>使用者地址：{{ receivedData.address }}</div>
+
+<hr />
+
+<app-b (myOutput)="onReceive($event)"></app-b>

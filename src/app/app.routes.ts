@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
 import { Routes } from '@angular/router';
-import {AppComponent} from './app.component';
-import { Ch1924Component } from './ch19-24/ch19-24.component';
+import { AComponent } from './ch23-24/output/a/a.component';
 
 export const routes: Routes = [
-  {path:'',component:Ch1924Component}
+  // 預設首頁指到新的練習頁面
+  { path: '', component: AComponent }
 ];
